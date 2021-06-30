@@ -1,14 +1,14 @@
   int t;
-  float x, y, alturaMax;
-  boolean ida, subindo;
+  float x, y, aMax;
+  boolean ida, up;
   
 void setup() {
   x = 30;
   y = 570;
   t = 0;
-  alturaMax = 470;
+  aMax = 470;
   ida = true;
-  subindo = true;
+  up = true;
   
   size(800,600);
 }
@@ -29,13 +29,13 @@ void draw() {
   
   if (y >= 570) {
       t = 1;
-      subindo = true; 
+      up = true; 
   }
-  if ((y >= alturaMax) && (subindo)) {
+  if ((y >= aMax) && (up)) {
     y = 570 - 10*t + (0.5*t*t)/2 ;
   }
   else {
-    subindo = false;
+    up = false;
     y = 570 + 10*t + (0.5*t*t)/2 ;
   }
   t++ ;
