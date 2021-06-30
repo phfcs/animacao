@@ -14,7 +14,7 @@ void setup() {
 }
 
 void draw() {
-  background(0);
+  background(128,128,128);
   circle(x, y, 60); 
   if ((x <= 770) && (ida)) {
     x = x + 800/120;
