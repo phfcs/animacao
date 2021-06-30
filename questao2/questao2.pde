@@ -20,7 +20,7 @@ float initial3_x = 150;
 float initial3_y = 350;
 
 void setup(){
-  size(450, 400);
+  size(450, 450);
 }
 
 void draw(){
