@@ -1,33 +1,34 @@
-float positionX = 300;
-float positionY = 300;
-float angle = 0.1;
- 
-void ellipsesFunc(float raio, float speed){
-   
-  float newX = positionY +  raio*cos(angle);
-  float newY = positionX +  raio*sin(angle);
- 
-  ellipse(newX, newY, 50, 50);
+float cx =0, cy = 75;
+float alpha = 0, w = PI/120;
 
-  newX = newX + 25f*cos(angle*4);
-  newY = newY + 25f*sin(angle*4);
-  
-  fill(255, 0, 0);
-  ellipse(newX, newY, 5, 5);
-  
-  angle+=speed; 
+
+void setup(){
+   size(500,500);
+   frameRate(60);
 }
 
-void setup (){
-  size(600, 600);
+void startSetup(){
+  background(155,155,155);
+  translate(250, 250);
+  scale(-1, 1);
+  stroke(0, 0,0 );
+  strokeWeight(2);
+  fill(155);
+  circle(0, 0, 200);
+
 }
- 
-void draw (){ 
-  background(255);
-  fill(255);
-  stroke(0, 0, 255);
-  
-  ellipse(positionX, positionY, 250, 250);
-  
-  ellipsesFunc(100, -0.05);
+
+void draw(){
+  startSetup();
+  rotate(alpha);
+  strokeWeight(1);
+  circle(cx, cy, 50);
+
+
+  translate(cx, cy);
+  rotate(-4*alpha);
+  strokeWeight(4);
+  stroke(255, 0, 0);
+  point(0, 25);
+  alpha += w;
 }

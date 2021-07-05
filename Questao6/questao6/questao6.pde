@@ -12,7 +12,7 @@ float y2;
 //
 float xz=x2=0;
 float yz=10;
-
+float x = 0;
 float vz=PI/2;
 //
 
@@ -34,35 +34,42 @@ void draw() {
   background(155);
 translate(width/2,height/2);
 scale(2,2);
-fill(155
-);
+fill(155);
 
 rotateX(PI/3);
-rotateZ(PI/2);
+rotateZ(PI/3);
+scale(1,-1,1);
+stroke(255,0 , 0);
 
-stroke(255,255,255);
 line(-51,-51,0,width,-51,0);
+stroke(0, 255 , 0);
 line(-51,-51,0,-51,height,0);
+stroke(0,0 , 255);
 line(-51,-51,0,-51,-51,height);
 
 stroke(0,0,0);
-
 rotateX(PI/3);
 
+
+translate(-51, 10,10);
 line(-51,-51,0,51,-51,0);
 line(-51,-51,0,-51,51,0);
 line(-51,51,0,51,51,0);
 line(51,51,0,51,-51,0);
 
-   stroke(255,0,0);
+stroke(255,0,0);
 circle(0,0,100);
+strokeWeight(2);
+stroke(0);
+point(0,0);
+strokeWeight(1);
 
 
 x1=r1*cos(v1);
   y1=r1*sin(v1);
   v1=v1-PI/(2*frameRate);
 
-circle(x1,y1,25);
+
 
 
 translate(x1,y1,12.5);
@@ -89,6 +96,6 @@ translate(x1,y1,12.5);
   ////
   stroke(0,255,255);
   circle(-xz,yz,5);
-  circle(12.5,0,5);
+  //circle(12.5,0,5);
 
 }

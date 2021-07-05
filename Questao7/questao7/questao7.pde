@@ -7,7 +7,6 @@ float y = 100;
 // coordenadas dos pontos
 float Ax = 400, Ay = 100, Az = 0;
 float Bx = -100, By = 50/3, Bz = 500;
-float Cx = 0, Cy = 0, Cz = 600;
 float Dx = 100, Dy = -50/3, Dz = 500;
 
 //velocidade angular
