@@ -18,19 +18,20 @@ frameRate(120);
 void sisC(){ //sistema de coordenadas
 translate(400,300);
 scale(1,-1);
+//coloração azul
 stroke(0,0,255);
 strokeWeight(1);
 line(-400,0,400,0); 
+//coloracao verde
 stroke(0,255,0);
 strokeWeight(1);
 line(0,-300, 0, 300);
 }
 
-
-
-
 void espiral(){
+  //espessura espiral
 strokeWeight(8);
+//cor do espiral
 stroke(255,0,0);
 //ponto1
 a = 20*cos(w1);

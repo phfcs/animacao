@@ -1,3 +1,4 @@
+//definir as variaveis
   int t;
   float x, y, aMax;
   boolean ida, up;

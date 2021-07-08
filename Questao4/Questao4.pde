@@ -1,10 +1,16 @@
 void setup(){
   size(800,600);
+  frameRate(120);
 } 
 
 void setupBG(){
   translate(400,300);
+  scale(1,1);
+  stroke(0,0,255);
+  strokeWeight(1);
   line(-400,0,400,0);
+  stroke(0,255,0);
+  strokeWeight(1);
   line(0,-300,0,300);
 }
 
